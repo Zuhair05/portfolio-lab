@@ -2,7 +2,7 @@
     
     <h1> Projects</h1>
     
-        <% projects.forEach(project => { %>
+        <% projects.forEach(function(project) { %>
            <div class="details">
                 <h2><%= project.title %></h2>
                 <img src="<%= project.image %>"  style="width: 300px; height: auto;">
