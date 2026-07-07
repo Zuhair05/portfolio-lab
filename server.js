@@ -53,13 +53,13 @@ const skills = [
 const projects = [
   {
     id: 1,
-    image: '/images/screenshot.png',
-    title: 'Game Project',
+    image: '../images/memoryCard.png',
+    title: ' Memory Card ',
     description: 'A browser-based game built with HTML, CSS, and JavaScript.',
     technologies: ['HTML', 'CSS', 'JavaScript'],
     features: [
       'Interactive buttons',
-      'Score tracking',
+      'Attempts Number',
       'Win or lose message'
     ],
     status: 'Completed',
@@ -68,7 +68,7 @@ const projects = [
   {
     id: 2,
     title: 'XO Game',
-    image: '/images/screenshot.png',
+    image: '../images/ticTac.png',
     description: 'A two-player Tic Tac Toe game where users take turns placing X and O.',
     technologies: ['HTML', 'CSS', 'JavaScript'],
     features: [
@@ -115,9 +115,10 @@ app.get('/projects', (function(req, res) {
     projects: projects
   });
 }));
-app.get('/project/:link', (function(req, res) {
-  res.render('project.ejs', {
-    project: project
+app.get('/project/:id', (function(req, res) {
+ const projectId =Number(req.params.id);
+ res.render('projects-show.ejs', {
+    projects: projects.filter(project => project.id == projectId)
   });
 }));
 

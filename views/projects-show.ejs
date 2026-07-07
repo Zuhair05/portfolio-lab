@@ -1,0 +1,18 @@
+    <%-include ('./partials/nav') %>
+    
+    <h1> Projects</h1>
+    
+        <% projects.forEach(project => { %>
+           <div class="details">
+                <h2><%= project.title %></h2>
+                <img src="<%= project.image %>"  style="width: 300px; height: auto;">
+                <p>Description: <%= project.description %></p>
+                <p>Technologies: <%= project.technologies %></p>
+                <p>Features: <%= project.features %></p>
+                <p>Status: <%= project.status %></p>
+                <p>Reflection: <%= project.reflection %></p>
+            </div>
+        <% }); %>
+    
+</body>
+</html>

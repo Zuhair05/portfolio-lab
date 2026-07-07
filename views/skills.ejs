@@ -1,15 +1,17 @@
 <%- include('./partials/nav') %>
 
     <h1>Skills</h1>
-    <ul>
+    
         <% skills.forEach(skill => { %>
-            <li>
+            <div class="skills">
+           
                 </h2><%= skill.name %></h2>
                 <p>Category: <%= skill.category %></p>
                 <p>Level: <%= skill.level %></p>
-                <p>Description: <%= skill.description %></p><hr>
-            </li>
+                <p>Description: <%= skill.description %></p>
+            
+            </div>
         <% }); %>
-    </ul>
+ 
 </body>
 </html>
