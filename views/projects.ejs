@@ -1,8 +1,8 @@
 <%- include('./partials/nav') %>
 
     <h1> Projects</h1>
+    <div class="projects">
     <% projects.forEach(project => { %>
-        <div class="projects">
             
            
                 <a href="/project/<%= project.id  %>">
@@ -10,7 +10,7 @@
                 </a>
            
            
+                <% }); %>
             </div>
-        <% }); %>
 </body>
 </html>

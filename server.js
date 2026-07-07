@@ -67,6 +67,20 @@ const projects = [
   },
   {
     id: 2,
+    title: 'Rock Paper Scissors',
+    image: '../images/rock game.jpeg',
+    description: 'A game where the player competes against the computer.',
+    technologies: ['HTML', 'CSS', 'JavaScript'],
+    features: [
+      'Random computer choice',
+      'Player choice buttons',
+      'Round result display'
+    ],
+    status: 'Completed',
+    reflection: 'This project helped me practice conditionals and functions.'
+  },
+  {
+    id: 3,
     title: 'XO Game',
     image: '../images/ticTac.png',
     description: 'A two-player Tic Tac Toe game where users take turns placing X and O.',
@@ -78,20 +92,6 @@ const projects = [
     ],
     status: 'Completed',
     reflection: 'This project helped me understand arrays, indexes, and game logic.'
-  },
-  {
-    id: 3,
-    title: 'Rock Paper Scissors',
-    image: '/images/screenshot.png',
-    description: 'A game where the player competes against the computer.',
-    technologies: ['HTML', 'CSS', 'JavaScript'],
-    features: [
-      'Random computer choice',
-      'Player choice buttons',
-      'Round result display'
-    ],
-    status: 'Completed',
-    reflection: 'This project helped me practice conditionals and functions.'
   }
 ];
 
